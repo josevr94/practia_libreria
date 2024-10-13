@@ -1,0 +1,28 @@
+{% extends 'book/base.html' %}
+
+
+{% block title %}
+    lista de libros
+{% endblock title %}
+    
+
+{% block content %}
+    <div class='container mt-3'>
+        <h3>Libros con valoracion mayor a 450</h3>
+        {% for libro in libros %}
+        
+            {% if libro.valoracion > 450 %}
+                <p>Titulo: {{libro.titulo}}, Autor: {{libro.autor}}, Valoracion: {{libro.valoracion}}</p>
+   
+            {% endif %}
+                
+            
+        {% endfor %}
+        <hr>
+        <h3>Lista de libros</h3>
+        {% for libro in libros %}
+        <p>Titulo: {{libro.titulo}}, Autor: {{libro.autor}}</p>
+        {% endfor %}
+    </div>
+{% endblock content %}
+    

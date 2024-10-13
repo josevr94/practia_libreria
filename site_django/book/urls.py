@@ -7,6 +7,6 @@ urlpatterns = [
     path('book/',views.book, name='book'),
     path('fecha/',views.obtener_fecha, name='fecha'),
     path('palindro/<name>',views.palindromo, name='palindro'),
-    
+    path('listbook/',views.titulos,name='lista')
     
 ]
