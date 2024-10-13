@@ -12,3 +12,6 @@ def book(request):
 def obtener_fecha(request):
     fecha_actual = datetime.datetime.now()
     return render(request,'book/fecha.html',{'fecha':fecha_actual})
+
+def palindromo(request,name):
+    return render(request,'book/palindro.html',{'name': name})
