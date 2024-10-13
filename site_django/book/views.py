@@ -2,6 +2,10 @@ from django.shortcuts import render
 import datetime
 
 # Create your views here.
+
+def menu(request):
+    return render(request,'book/menu.html')
+
 def index(request):
     return render(request,'book/index.html')
     
